@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let username=prompt('Nhập tài khoản', '');
+    if(username=='Admin')
+    {
+        let pass=prompt('Nhập mật khẩu');
+        if(pass=='TheMaster')
+        {
+            alert('Welcome!');
+        }
+        else if(pass == '')
+            {
+                alert('Canceled');
+            }
+            else
+            {
+             alert('Wrong password');
+            }
+    }
+    else if(username == '')
+    {
+        alert('Canceled');
+    }
+    else
+        {
+            alert('I don’t know you');
+        }
+</script>
+</body>
+</html>
